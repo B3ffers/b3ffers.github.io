@@ -1,6 +1,9 @@
-#  This is a Test Page to see how it is working. 
 
-## this is a sub title to check headers 
+---
+layout: post
+title: This is a Test Page!
+---
+
 
 1.this is a normal list item 
 2.another item in the sme list
@@ -19,3 +22,11 @@ Inline `code` has `back-ticks around` it.
 s = "Python syntax highlighting"
 print s
 ```
+
+
+
+About the Authors,
+
+Sysb3fer is a professional network administrator,penetration tester currently working over several projects.
+
+![_config.yml]({{ site.baseurl }}/images/config.png)
