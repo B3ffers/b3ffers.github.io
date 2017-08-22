@@ -1,9 +1,11 @@
 ---
 layout: post
-title: You're up and running!
+title: Introduction To Our Blog!
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
+About the Authors,
+
+Sysb3fer is a professional network administrator,penetration tester currently working over several projects.
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
