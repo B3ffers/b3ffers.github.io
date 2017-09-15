@@ -3,7 +3,7 @@
 [Home](HOME.md)
 
 [Presence]()
-* [Windows](test/test.md)
+* [Windows](test/windows/test.md)
 * [Linux](presence/linux/index.md)
 * [OSX](presence/osx/index.md)
 
