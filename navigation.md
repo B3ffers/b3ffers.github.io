@@ -4,8 +4,7 @@
 
 [Presence]()
 * [Windows](test/windows/test.md)
-* [Linux](presence/linux/index.md)
-* [OSX](presence/osx/index.md)
+
 
 [gimmick:themechooser](Wiki Theme)
 
