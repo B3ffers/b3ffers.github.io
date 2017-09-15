@@ -1,8 +1,8 @@
 # Jekyll configuration
 
-name: abatchy's blog
-title: abatchy's blog
-description: Just another security blog.
+name: BufferOv3rride Blog
+title: BufferOv3rride Blog
+description: Pentesting Blog.
 
 # Url is currently only used only for the RSS feed in feed.xml
 url: http://b3ffers.github.io
