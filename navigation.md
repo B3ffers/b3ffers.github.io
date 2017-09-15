@@ -3,7 +3,7 @@
 [Home](index.md)
 
 [Presence]()
-* [Windows](test/test/test.md)
+* [Windows](test/test.md)
 
 [gimmick:themechooser](Wiki Theme)
 
