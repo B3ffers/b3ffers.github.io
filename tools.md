@@ -1,7 +1,7 @@
 ---
 layout: page
 title: tools
-permalink: /tools/
+permalink: /HOME/
 ---
 
 Some information about you!
