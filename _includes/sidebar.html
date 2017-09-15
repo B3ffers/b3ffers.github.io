@@ -1,0 +1,56 @@
+<div class="sidebar">
+    <img src="{{ site.baseurl }}/images/personal/bufferov3rride.jpg" width=150px alt="This is an alpacha looking llama"/>
+</div>
+
+{% if site.sidebar.twitter %}
+<div class="sidebar button">
+    <a href="https://twitter.com/abatchy17" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @bufferov3rride</a><script async="async" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+{% endif %}
+
+{% if site.sidebar.github %}
+<div class="sidebar button">
+    <a class="github-button" href="https://github.com/abatchy17" data-style="mega" aria-label="Follow @abatchy17 on GitHub">Follow @bufferov3rride</a>
+</div>
+{% endif %}
+
+
+{% if site.sidebar.recent %}
+<div class="sidebar ">
+  <h2>Recent Posts</h2>
+  <ul>
+    {% for post in site.posts limit:5 %}
+    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if site.sidebar.tags %}
+<div class="sidebar">
+  <h2>Categories</h2>
+  <ul class="sideBarTags">
+    {% assign tags = (site.tags | sort:0) %}
+    {% for tag in tags %}
+    <li>
+      <a href="{{ site.baseurl}}/tag/{{ tag[0] }}" data-toggle="tooltip" data-placement="right" title="{{ tag[1].size }}">
+        <span>{{tag[0] }}</span></a></li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if site.sidebar.archive %}
+<div class="sidebar">
+		<h2>Blog Archive</h2>  
+		{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%B %Y'"  %}
+        {% for yearMonth in postsByYearMonth %}
+          <h4>{{ yearMonth.name }}</h4>
+            <ul>
+              {% for post in yearMonth.items %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+              {% endfor %}
+            </ul>
+        {% endfor %}
+</div>
+{% endif %}
